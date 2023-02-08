@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.deletegeneral">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1280.0">
+         <left>
+            <VBox prefHeight="720.0" prefWidth="275.0" style="-fx-background-color: #B2C9AB;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Home" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToClients" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Clients" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToHerbs" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Herbs" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@../icons/herbs.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#switchToRecipes" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Recipes" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mortar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToDatabase" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Database" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/list.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Statistics" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/statistics.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToAssign" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Assignment" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@../icons/assign.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1280.0" style="-fx-background-color: #869781;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/medicine.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Recall Healing and Chinese Medicine Application" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <BorderPane prefHeight="645.0" prefWidth="1006.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label text="Delete a general client!" textFill="#869781" BorderPane.alignment="BOTTOM_LEFT">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ComboBox fx:id="generalDeleteComboBox" layoutX="119.0" layoutY="112.0" prefHeight="25.0" prefWidth="260.0" promptText="select General Client" />
+                        <Label layoutX="119.0" layoutY="62.0" text="Select the General Client" textFill="#869781">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="587.0" layoutY="240.0" mnemonicParsing="false" onAction="#generalDeleteButton" prefHeight="116.0" prefWidth="250.0" styleClass="buttonSmall" stylesheets="@../css/styling.css" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

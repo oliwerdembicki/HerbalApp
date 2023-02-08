@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.recipesDB">
+    <children>
+        <BorderPane prefHeight="720.0" prefWidth="1280.0">
+            <left>
+                <VBox prefHeight="720.0" prefWidth="275.0" style="-fx-background-color: #B2C9AB;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Home" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToClients" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Clients" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/user.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToHerbs" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Herbs" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0">
+                                    <image>
+                                        <Image url="@../icons/herbs.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#switchToRecipes" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Recipes" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/mortar.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToDatabase" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Database" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/list.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Statistics" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons/statistics.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToAssign" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Assignment" textFill="#fafafa">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="60.0" fitWidth="60.0">
+                                    <image>
+                                        <Image url="@../icons/assign.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </VBox>
+            </left>
+            <top>
+                <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1280.0" style="-fx-background-color: #869781;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icons/medicine.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Recall Healing and Chinese Medicine Application" textFill="#fcfcfc">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </HBox>
+            </top>
+            <center>
+                <TabPane fx:id="herbs1" prefHeight="646.0" prefWidth="1006.0" stylesheets="@../css/styling.css" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                    <tabs>
+                        <Tab text="Recipes">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <BorderPane prefHeight="617.0" prefWidth="1006.0">
+                                            <top>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1280.0" spacing="15.0" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <Label text="Recipes" textFill="#464646">
+                                                            <font>
+                                                                <Font name="System Bold" size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Button mnemonicParsing="false" onAction="#recipeAddNewRecipeButton" prefHeight="40.0" prefWidth="145.0" styleClass="buttonSmall" stylesheets="@../css/styling.css" text="Add new recipe" textFill="WHITE" />
+                                                        <Button layoutX="122.0" layoutY="28.0" mnemonicParsing="false" onAction="#recipeDeleteRecipeButton" prefHeight="40.0" prefWidth="115.0" styleClass="buttonSmall" stylesheets="@../css/styling.css" text="Delete recipe" textFill="WHITE" />
+                                                    </children>
+                                                    <padding>
+                                                        <Insets left="20.0" />
+                                                    </padding>
+                                                </HBox>
+                                            </top>
+                                            <center>
+                                                <TableView fx:id="tableviewRecipes" prefHeight="542.0" prefWidth="950.0" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
+                                                    <columns>
+                                                        <TableColumn fx:id="toName" prefWidth="75.0" text="Name" />
+                                                        <TableColumn fx:id="toComposition" prefWidth="75.0" text="Composition" />
+                                                        <TableColumn fx:id="toDateDue" prefWidth="75.0" text="Date due" />
+                                                        <TableColumn fx:id="toProperties" prefWidth="75.0" text="Properties" />
+                                                        <TableColumn fx:id="toLimitations" prefWidth="75.0" text="Limitations" />
+                                                        <TableColumn fx:id="toRestrictions" prefWidth="128.0" text="Restrictions" />
+                                                    </columns>
+                                                    <columnResizePolicy>
+                                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                    </columnResizePolicy>
+                                                </TableView>
+                                            </center>
+                                        </BorderPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

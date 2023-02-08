@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.mainPage">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1280.0">
+         <left>
+            <VBox prefHeight="720.0" prefWidth="275.0" style="-fx-background-color: #B2C9AB;" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Home" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToClients" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Clients" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToHerbs" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Herbs" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@../icons/herbs.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#switchToRecipes" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Recipes" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/mortar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToDatabase" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Database" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/list.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#switchToStatistics" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Statistics" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/statistics.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToAssign" prefHeight="92.0" prefWidth="291.0" stylesheets="@../css/styling.css" text="Assignment" textFill="#fafafa">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="60.0">
+                           <image>
+                              <Image url="@../icons/assign.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1280.0" style="-fx-background-color: #869781;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/medicine.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Recall Healing and Chinese Medicine Application" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <BorderPane prefHeight="645.0" prefWidth="1006.0" stylesheets="@../css/styling.css" BorderPane.alignment="CENTER">
+               <top>
+                  <Label stylesheets="@../css/styling.css" text="Welcome Daria :)!" textFill="#596456" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets top="30.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text layoutX="14.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructions" wrappingWidth="634.13671875">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to your Herbal Application! " wrappingWidth="322.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="339.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To navigate, click on tiles to your left that interest you at the moment." wrappingWidth="618.13671875">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="130.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the &quot;clients&quot; tab you will find the complete list of your clients and an option to add, remove or import them from an excel sheet." wrappingWidth="475.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="130.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the &quot;herbs&quot; tab you will find the complete list of your herbs and recepies and an option to add, remove or import them from an excel sheet." wrappingWidth="475.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="130.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the &quot;database&quot; tab you will find the your whole data base of clients and herbs/recepies assigned to them, along with the most important info needed for contact." wrappingWidth="475.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="130.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the &quot;statistics&quot; tab you will find any and every important statistic that will help you with assessing many important facts about your clients and supply." wrappingWidth="475.13671875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
